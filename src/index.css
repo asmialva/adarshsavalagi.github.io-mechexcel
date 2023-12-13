@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.links {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.Logo{
+    height: 50px;
+}
+.contact-items{
+  opacity: 0;
+  transform: translateX(-20px); /* Optional: You can add a slight upward translation effect */
+  transition: opacity 0.8s, transform 0.8s; /* Adjust the duration as needed */
+}
+
+.contact-items.visible {
+  opacity: 1;
+  transform: translateX(0); /* Optional: Reset the translation effect */
+}
