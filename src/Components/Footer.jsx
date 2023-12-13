@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../assets/LOGO.jpeg';
 export default function Footer() {
     return (
-        <>
+        <><hr />
             <footer className="footer p-10 mx-auto w-11/12  text-base-content my-3">
                 <aside>
                     <img src={Logo} alt="Logo" className="Logo" />

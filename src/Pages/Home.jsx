@@ -7,7 +7,6 @@ export default function HomePage() {
   return (
     <div className='container md:w-11/12 mx-auto'>
       <Hero/>
-      <About/>
      <Contact/>
     </div>
   )

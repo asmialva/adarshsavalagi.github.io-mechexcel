@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../assets/LOGO.jpeg';
-
+import { Link } from 'react-router-dom';
 export default function Navbar() {
     const [scrolltopdata, setscrolltopdata] = useState('');
     const [isTop, setIsTop] = useState('hidden');
@@ -21,7 +21,19 @@ export default function Navbar() {
             }
         });
     }, [])
-
+    const [isMenuOpen, toggleMenu] = useState(true);
+    const handletoggle = () => {
+      toggleMenu(!isMenuOpen);
+      if (isMenuOpen) {
+        document.getElementById('navbar-collapse-with-animation').classList.remove('hidden');
+        document.getElementById('close').classList.remove('hidden');
+        document.getElementById('open').classList.add('hidden');
+    } else {
+        document.getElementById('navbar-collapse-with-animation').classList.add('hidden');
+        document.getElementById('close').classList.add('hidden');
+        document.getElementById('open').classList.remove('hidden');
+      }
+    }
     return (
         <>
         <header>
@@ -30,20 +42,21 @@ export default function Navbar() {
                     <div className="flex items-center justify-between">
                         <img src={Logo} className="Logo" />
                         <div className="sm:hidden">
-                            <button type="button" className="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none " data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                                <svg className="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <button type="button" onClick={handletoggle} className="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none " >
+                                <svg id='open'  className=" w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                                 </svg>
-                                <svg className="hs-collapse-open:block flex-shrink-0 hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <svg id='close' className="hidden block flex-shrink-0  w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
                         </div>
                     </div>
+
                     <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
                         <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-                            <a className="font-medium text-blue-600 sm:py-6 " href="#" aria-current="page">HOME</a>
-                            <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="#">ABOUT US</a>
+                            <Link className="font-medium text-blue-600 sm:py-6 " to="/adarshsavalagi.github.io-mechexcel/" aria-current="page">HOME</Link>
+                            <Link className="font-medium text-gray-500 hover:text-gray-400 sm:py-6" to="/adarshsavalagi.github.io-mechexcel/about">ABOUT US</Link>
 
                             <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
                                 <button type="button" className="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium  ">
