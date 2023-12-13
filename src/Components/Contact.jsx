@@ -19,10 +19,11 @@ export default function Contact() {
     });
   return (
     <>
+    <hr />
             <div className='container mt-5  justify-center mx-auto'>
                 <div className="flex flex-col text-center w-full mb-20">
-                    <h2 className="text-s text-blue-800 tracking-widest font-medium title-font mb-1">Contact us</h2>
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Reach our customer service department.</h1>
+                <h1 className='font-bold text-3xl text-center mb-3'>Contact Us</h1>
+                <h3 className='text-lg mb-2  text-center'>Reach our customer service department.</h3>
                 </div>
                 <div className='grid md:grid-cols-2 text-gray-600 body-font md:m-24'>
                     {/* cards */}
@@ -114,6 +115,7 @@ export default function Contact() {
                     </div>
                 </div >
             </div >
+    
         </>
   )
 }

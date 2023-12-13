@@ -58,29 +58,10 @@ export default function Navbar() {
                             <Link className="font-medium text-blue-600 sm:py-6 " to="/adarshsavalagi.github.io-mechexcel/" aria-current="page">HOME</Link>
                             <Link className="font-medium text-gray-500 hover:text-gray-400 sm:py-6" to="/adarshsavalagi.github.io-mechexcel/about">ABOUT US</Link>
 
-                            <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
-                                <button type="button" className="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium  ">
-                                    SERVICES
-                                    <svg className="ms-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
-                                    </svg>
-                                </button>
-
-                                <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2  before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
-                                    <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="#">
-                                        PIPELINE SERVICE
-                                    </a>
-
-
-                                    <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="#">
-                                        INDUSTRIAL SERVICES
-                                    </a>
-                                    <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="#">
-                                        MANUFACTURING FACILITY
-                                    </a>
-                                </div>
-                            </div>
-
+                        
+                            <a className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600  sm:my-6 " href="#">
+                            SERVICES
+                            </a>
                             <a className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600  sm:my-6 " href="#">
                                 CONTACT US
                             </a>
