@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
+          <Route path="/adarshsavalagi.github.io-mechexcel/"  element={<HomePage />} />
         </Routes>
         <Footer />
       </Router>
