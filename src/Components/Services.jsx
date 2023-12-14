@@ -2,14 +2,16 @@ import React from 'react'
 import pipeline from '../assets/pipeline.jpg';
 import industry from '../assets/industrial.jpg'
 import manufacture from '../assets/manufacture.jpg'
+
+import { Link} from 'react-router-dom';
 export default function Services() {
 
 
     const serviceItem = [
-        { title: 'Pipeline Services',image:pipeline , data: 'Pipeline services encompass critical operations like hot tapping, ensuring uninterrupted flow during modifications. Line stopping halts flow for maintenance, while cold cutting allows alterations without heat-induced risks. Pigging aids in cleaning and maintaining pipelines, collectively ensuring efficient and safe pipeline operations.' },
-        { title: 'Industrial Services',image:industry, data: 'Industrial services encompass crucial operations like catalyst handling, ensuring safe and efficient catalyst changes in chemical plants. Crude oil tank cleaning maintains tank integrity, while mechanical decoking via pigging enhances pipeline efficiency. Vaccum tankers facilitate waste removal, vital for industrial cleanliness and environmental compliance.' },
-        { title: 'Manufacturing Facility',image:manufacture, data: 'Our Raigad District, Maharashtra, headquarters houses a proficient fabrication facility. Manned by skilled workers, this expansive space boasts advanced equipment for all fabrication tasks. From inception to execution, our indigenous facility ensures top-notch quality in every fabrication endeavor' },
-    ];
+        { title: 'Hot Tapping',image:pipeline , data: 'Pipeline services encompass critical operations like hot tapping, ensuring uninterrupted flow during modifications. Line stopping halts flow for maintenance, while cold cutting allows alterations without heat-induced risks. Pigging aids in cleaning and maintaining pipelines, collectively ensuring efficient and safe pipeline operations.' },
+        { title: 'Line Stopping',image:industry, data: 'Industrial services encompass crucial operations like catalyst handling, ensuring safe and efficient catalyst changes in chemical plants. Crude oil tank cleaning maintains tank integrity, while mechanical decoking via pigging enhances pipeline efficiency. Vaccum tankers facilitate waste removal, vital for industrial cleanliness and environmental compliance.' },
+        { title: 'Cold Cutting',image:manufacture, data: 'Our Raigad District, Maharashtra, headquarters houses a proficient fabrication facility. Manned by skilled workers, this expansive space boasts advanced equipment for all fabrication tasks. From inception to execution, our indigenous facility ensures top-notch quality in every fabrication endeavor' },
+      ];
 
 
     return (
@@ -22,6 +24,7 @@ export default function Services() {
 
                        <ServiceCard serviceItem={serviceItem} />
                     
+                  <Link to='/adarshsavalagi.github.io-mechexcel/service'>  <button className="btn my-4">See more...</button></Link>
 
                 </div></div>
         

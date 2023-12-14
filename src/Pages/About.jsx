@@ -1,6 +1,5 @@
 import React from 'react'
 import backgroundImage from '../assets/about.jpg';
-import aboutImage from '../assets/about1.jpg';
 export default function About() {
 
 
@@ -104,47 +103,34 @@ export default function About() {
       <div className='w-9/12 md:w-2/3 mx-auto mb-9'>
         <div className="ps-2 my-2 first:mt-0">
           <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
-          <p className='font-bold my-4 text-2xl'>Why Choose MECHEXCEL (I) LLP?</p>
+            <p className='font-bold my-4 text-2xl'>Why Choose MECHEXCEL (I) LLP?</p>
           </h3>
         </div>
 
         {points.map((point, index) => (
-        <div className="flex gap-x-3" key={index}>
-          <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
-            <div className="relative z-10 w-7 h-7 flex justify-center items-center">
-              <div className="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
+          <div className="flex gap-x-3" key={index}>
+            <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
+              <div className="relative z-10 w-7 h-7 flex justify-center items-center">
+                <div className="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
+              </div>
+            </div>
+            <div className="grow pt-0.5 pb-8">
+              <h3 className="flex gap-x-1.5 font-semibold text-gray-800 text-lg">
+                {point.title}
+              </h3>
+              <p className="mt-1 text-md text-gray-600 dark:text-gray-400">
+                {point.description}
+              </p>
             </div>
           </div>
-          <div className="grow pt-0.5 pb-8">
-            <h3 className="flex gap-x-1.5 font-semibold text-gray-800 text-lg">
-            {point.title}
-            </h3>
-            <p className="mt-1 text-md text-gray-600 dark:text-gray-400">
-            {point.description}
-            </p>
-          </div>
-        </div>
 
-))}
+        ))}
       </div>
 
-
-
-
-
-      
-<div className='w-4/5 md:w-9/12 mx-auto'>
-      <CustomBorderedCard title={`Join Us in Shaping the Future`} content={`MECHEXCEL (I) LLP is not just a company; it's a vision for a better industrial future. We invite you to explore our website and learn more about how we can collaborate to achieve your goals. Your success is our success, and together, we can drive progress in the industries we serve.`} />
-      <p className='sm mx-auto  my-5'>Thank you for considering MECHEXCEL (I) LLP as your trusted industrial services partner. We look forward to building lasting relationships and contributing to the success of your projects.</p>
-
-</div>
-
-
-
-
-
-
-     
+      <div className='w-4/5 md:w-9/12 mx-auto'>
+        <CustomBorderedCard title={`Join Us in Shaping the Future`} content={`MECHEXCEL (I) LLP is not just a company; it's a vision for a better industrial future. We invite you to explore our website and learn more about how we can collaborate to achieve your goals. Your success is our success, and together, we can drive progress in the industries we serve.`} />
+        <p className='sm mx-auto  my-5'>Thank you for considering MECHEXCEL (I) LLP as your trusted industrial services partner. We look forward to building lasting relationships and contributing to the success of your projects.</p>
+      </div>
     </>
   );
 };

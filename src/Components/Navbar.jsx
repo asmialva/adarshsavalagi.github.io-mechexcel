@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../assets/LOGO.jpeg';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { setByAmount } from '../reducers/cartReducer'
 
@@ -23,20 +23,20 @@ export default function Navbar() {
         });
     }
 
-    const scrollToSection = (name,num) => {
+    const scrollToSection = (name, num) => {
         handletoggle();
-        if(count==2){
+        if (count == 2) {
             setTimeout(() => {
                 const nextSection = document.getElementById(name);
-        if (nextSection) {
-            const sectionTop = nextSection.getBoundingClientRect().top;
-            window.scrollBy({
-                top: sectionTop - 250, 
-                behavior: 'smooth'
-            });
-           dispatch(setByAmount(num));
-        }
-              }, 200);
+                if (nextSection) {
+                    const sectionTop = nextSection.getBoundingClientRect().top;
+                    window.scrollBy({
+                        top: sectionTop - 250,
+                        behavior: 'smooth'
+                    });
+                    dispatch(setByAmount(num));
+                }
+            }, 200);
             history('/adarshsavalagi.github.io-mechexcel/');
         }
         console.log(count);
@@ -44,10 +44,10 @@ export default function Navbar() {
         if (nextSection) {
             const sectionTop = nextSection.getBoundingClientRect().top;
             window.scrollBy({
-                top: sectionTop - 250, 
+                top: sectionTop - 250,
                 behavior: 'smooth'
             });
-           dispatch(setByAmount(num));
+            dispatch(setByAmount(num));
         }
     };
 
@@ -101,12 +101,12 @@ export default function Navbar() {
 
                         <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
                             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-                                <Link duration={100} offset={-70} className={`font-medium ${count == 1 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} to="/adarshsavalagi.github.io-mechexcel/"  aria-current="page" onClick={() => {scrollToSection('home',1);}}>HOME</Link>
-                                <Link duration={100} offset={-70} className={`font-medium ${count == 2 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} to="/adarshsavalagi.github.io-mechexcel/about" onClick={() => {dispatch(setByAmount(2));handletoggle();}}>ABOUT US</Link>
-                                <a className={`font-medium ${count == 3 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() =>{  scrollToSection('services',3);}}>
+                                <Link duration={100} offset={-70} className={`font-medium ${count == 1 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} to="/adarshsavalagi.github.io-mechexcel/" aria-current="page" onClick={() => { scrollToSection('home', 1); }}>HOME</Link>
+                                <Link duration={100} offset={-70} className={`font-medium ${count == 2 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} to="/adarshsavalagi.github.io-mechexcel/about" onClick={() => { dispatch(setByAmount(2)); handletoggle(); }}>ABOUT US</Link>
+                                <Link to='/adarshsavalagi.github.io-mechexcel/service' className={`font-medium ${count == 3 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() => { scrollToSection('services', 3); }}>
                                     SERVICES
-                                </a>
-                                <a className={`font-medium ${count == 4 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() =>{  scrollToSection('contact',4);}}>
+                                </Link>
+                                <a className={`font-medium ${count == 4 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() => { scrollToSection('contact', 4); }}>
                                     CONTACT US
                                 </a>
                             </div>
