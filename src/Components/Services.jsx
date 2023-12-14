@@ -13,8 +13,9 @@ export default function Services() {
 
 
     return (
-        <>
-            <div className='mx-auto justify-center align-middle w-11/12 md:w-full h-5/6' >
+      <section>
+        
+            <div id='services' className='mx-auto  justify-center align-middle w-11/12 md:w-full ' >
                 <h1 className='font-bold text-3xl text-center my-3'>Services</h1>
                 <h3 className='text-lg mb-2  text-center '>We Provide a range of services such as...</h3>
                 <div className="flex flex-wrap mb-10 md:mx-10 justify-center">
@@ -23,7 +24,8 @@ export default function Services() {
                     
 
                 </div></div>
-        </>
+        
+      </section>
     )
 }
 

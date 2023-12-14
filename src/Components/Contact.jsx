@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <>
     <hr />
-            <div className='container mt-5  justify-center mx-auto'>
+            <div className='container mt-5  justify-center mx-auto' id='contact'>
                 <div className="flex flex-col text-center w-full mb-20">
                 <h1 className='font-bold text-3xl text-center mb-3'>Contact Us</h1>
                 <h3 className='text-lg mb-2  text-center'>Reach our customer service department.</h3>

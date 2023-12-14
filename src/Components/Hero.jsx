@@ -1,25 +1,77 @@
 import React from 'react'
 
 export default function Hero() {
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('services');
   
+  if (nextSection) {
+    const sectionTop = nextSection.getBoundingClientRect().top;
+    window.scrollBy({ 
+      top: sectionTop - 250, // Adjust 20 as needed for extra spacing
+      behavior: 'smooth' 
+    });
+  }
+  };
   return (
-   <>
-   <section className="bg-white ">
-    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        
-        <h1 className="mb-5 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">MechExcel: Shaping Tomorrow's Industrial Landscape.</h1>
-        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">Empowering Innovations, Engineering Excellence - Welcome to MechExcel, where mechanical prowess meets transformative solutions, driving the future of engineering marvels.</p>
-        <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 ">
-              Get started
-                <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    <>
+      <section className="bg-white flex justify-center items-center h-screen" id='home'>
+        <div className="text-center">
+          <h1 className="mb-5 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">MechExcel: Shaping Tomorrow's Industrial Landscape.</h1>
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">Empowering Innovations, Engineering Excellence - Welcome to MechExcel, where mechanical prowess meets transformative solutions, driving the future of engineering marvels.</p>
+          <div className="flex flex-col mb-8 lg:mb-16 space-y-4 items-center text-center content-center">
+            <a href="#" onClick={scrollToNextSection} className=" justify-center items-center py-3 px-5 text-base font-medium text-center text-black ">
+            <AnimatedSVG/>
+
+
+
             </a>
-             
+          </div>
         </div>
-        
-    </div>
-    <hr />
-</section>
-   </>
+      </section>
+    </>
   )
+}
+
+function AnimatedSVG() {
+  const svgStyle = {
+    animation: 'moveUpDown 1s ease-in-out infinite alternate',
+  };
+
+  const keyframes = `
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(15px); 
+      }
+    }
+  `;
+
+  return (
+    <svg
+      width="90"
+      height="90"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={svgStyle}
+    >
+      <style>{keyframes}</style>
+      <path
+        d="M6 12.5L11.3243 17.3806C11.6451 17.6747 11.8055 17.8217 12 17.8217C12.1945 17.8217 12.3549 17.6747 12.6757 17.3806L18 12.5"
+        stroke="#141B34"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6 6L11.3243 10.8806C11.6451 11.1747 11.8055 11.3217 12 11.3217C12.1945 11.3217 12.3549 11.1747 12.6757 10.8806L18 6"
+        stroke="#141B34"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
 }
