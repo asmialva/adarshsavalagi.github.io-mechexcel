@@ -1,22 +1,21 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import backgroundImage from '../assets/about.jpg';
 import { useSelector, useDispatch } from 'react-redux'
 import { setByAmount } from '../reducers/cartReducer'
-
-import {aboutDetails,points} from '../data/About';
+import { aboutDetails, points } from '../data/About';
 export default function About() {
 
   const count = useSelector((state) => state.State.value)
   const dispatch = useDispatch()
-  useEffect(()=>{
+  useEffect(() => {
 
     dispatch(setByAmount(2));
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-  });
-  },[]);
-  
+    });
+  }, []);
+
 
   const containerStyle = {
     height: '60vh',
@@ -61,9 +60,9 @@ export default function About() {
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {  aboutDetails.map((data, index) => (
-            <AboutCard title={data.title} description={data.description} key={index} />
-          ))}
+            {aboutDetails.map((data, index) => (
+              <AboutCard title={data.title} description={data.description} image={data.image} key={index} />
+            ))}
 
 
           </div>
@@ -126,14 +125,19 @@ const CustomBorderedCard = ({ title, content }) => {
 function AboutCard(props) {
   return (
     <>
-        <div className="bg-white rounded-lg shadow-md p-6">
-              <p className='text-2xl font-bold'>
-                {props.title}
-              </p>
-              <p className="mt-4 text-md text-gray-600">
-                {props.description}
-              </p>
-            </div>
+      <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="avatar">
+          <div className="w-24 rounded-full mx-auto ring ring-neutral ring-offset-base-100 ring-offset-2">
+            <img src={props.image} />
+          </div>
+        </div>
+        <p className='text-2xl font-bold'>
+          {props.title}
+        </p>
+        <p className="mt-4 text-md text-gray-600">
+          {props.description}
+        </p>
+      </div>
 
     </>
   )
