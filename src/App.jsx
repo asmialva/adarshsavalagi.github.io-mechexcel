@@ -3,8 +3,8 @@ import HomePage from './Pages/Home';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import About from './Pages/About';
-import { Counter } from "./reducers/counter";
 import Service from "./Pages/Service";
+import TempPage from "./Pages/temp";
 function App() {
 
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path="/adarshsavalagi.github.io-mechexcel/"  element={<HomePage />} />
           <Route path="/adarshsavalagi.github.io-mechexcel/about"  element={ <About/>} />
           <Route path="/adarshsavalagi.github.io-mechexcel/service"  element={ <Service/>} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/test"  element={ <Counter/>} />
+          <Route path="/adarshsavalagi.github.io-mechexcel/test"  element={ <TempPage/>} />
 
         </Routes>
         <Footer />

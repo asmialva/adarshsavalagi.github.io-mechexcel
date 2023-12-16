@@ -1,19 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import backgroundImage from '../assets/about.jpg';
 import { ServicePageCategories } from '../data/services'
-import { useSelector, useDispatch } from 'react-redux'
-import { setByAmount } from '../reducers/cartReducer'
 export default function TempPage() {
-  const count = useSelector((state) => state.State.value)
-  const dispatch = useDispatch()
-  useEffect(()=>{
-
-    dispatch(setByAmount(3));
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-  });
-  },[]);
 
   const [state, setState] = useState(0);
 

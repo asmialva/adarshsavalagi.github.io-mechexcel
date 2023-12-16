@@ -25,7 +25,7 @@ export default function Navbar() {
 
     const scrollToSection = (name, num) => {
         handletoggle();
-        if (count == 2) {
+        if (count == 2 || count == 3) {
             setTimeout(() => {
                 const nextSection = document.getElementById(name);
                 if (nextSection) {
@@ -103,7 +103,7 @@ export default function Navbar() {
                             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
                                 <Link duration={100} offset={-70} className={`font-medium ${count == 1 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} to="/adarshsavalagi.github.io-mechexcel/" aria-current="page" onClick={() => { scrollToSection('home', 1); }}>HOME</Link>
                                 <Link duration={100} offset={-70} className={`font-medium ${count == 2 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} to="/adarshsavalagi.github.io-mechexcel/about" onClick={() => { dispatch(setByAmount(2)); handletoggle(); }}>ABOUT US</Link>
-                                <Link to='/adarshsavalagi.github.io-mechexcel/service' className={`font-medium ${count == 3 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() => { scrollToSection('services', 3); }}>
+                                <Link to='/adarshsavalagi.github.io-mechexcel/service' className={`font-medium ${count == 3 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() => { dispatch(setByAmount(3)); handletoggle(); }}>
                                     SERVICES
                                 </Link>
                                 <a className={`font-medium ${count == 4 ? "text-blue-600" : "text-gray-500"} sm:py-6 hover:text-blue-900 hover:underline`} onClick={() => { scrollToSection('contact', 4); }}>
