@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/LOGO.jpeg';
+import { Link, useNavigate } from 'react-router-dom';
 export default function Footer() {
     return (
         <><hr />
@@ -25,14 +26,14 @@ export default function Footer() {
                 </aside>
                 <nav className='text-base'>
                     <header className="footer-title"> OUR SERVICES</header>
-                    <li className="">Hot Tappings</li>
-                    <li className="">Line Stopping</li>
-                    <li className="">Cold Cutting</li>
-                    <li className="">Catalyst Handling</li>
-                    <li className="">Crude Oil Tank Cleaning</li>
-                    <li className="">Mechanical Decoking - pigging</li>
-                    <li className="">Vaccum Tankers</li>
-                    <li className="">Manufacturing Facility</li>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/hottapping'>    <li className="">Hot Tappings</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/linestopping'>    <li className="">Line Stopping</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/coldcutting'>    <li className="">Cold Cutting</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/catalysthandling'>    <li className="">Catalyst Handling</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/crudeoilcleaning'>    <li className="">Crude Oil Tank Cleaning</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/pigging'>    <li className="">Mechanical Decoking - pigging</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/vaccumtanker'>    <li className="">Vaccum Tankers</li></Link>
+                <Link to='/adarshsavalagi.github.io-mechexcel/service/manufacturing'>    <li className="">Manufacturing Facility</li></Link>
                 </nav>
                 <nav className='text-base '>
                     <h2 className="footer-title mr-2">REACH US AT:</h2>

@@ -1,8 +1,8 @@
 
 
-import pipeline from '../assets/pipeline.jpg';
-import industry from '../assets/industrial.jpg'
-import manufacture from '../assets/manufacture.jpg'
+import pipeline from '../assets/services/pipeline.jpg';
+import industry from '../assets/services/industrial.jpg'
+import manufacture from '../assets/services/manufacture.jpg'
 
 // for home page
 export const serviceItem = [

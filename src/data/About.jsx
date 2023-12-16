@@ -21,9 +21,9 @@ export const points = [
     },
   ];
 
-  import aboutIcon1 from '../assets/aboutIcon1.png'
-  import expertize from '../assets/expertize.jpg'
-  import commitment from '../assets/commitment.jpg'
+  import aboutIcon1 from '../assets/about/aboutIcon1.png'
+  import expertize from '../assets/about/expertize.jpg'
+  import commitment from '../assets/about/commitment.jpg'
   export const  aboutDetails = [
     {
       title: 'About MECHEXCEL',image:aboutIcon1,

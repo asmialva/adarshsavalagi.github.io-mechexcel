@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import backgroundImage from '../assets/about.jpg';
+import backgroundImage from '../assets/about/about.jpg';
 import { ServicePageCategories } from '../data/services'
 import { useSelector, useDispatch } from 'react-redux'
 import { setByAmount } from '../reducers/cartReducer'

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import backgroundImage from '../assets/about.jpg';
+import backgroundImage from '../assets/about/about.jpg';
 import { ServicePageCategories } from '../data/services'
 export default function TempPage() {
 
