@@ -26,14 +26,15 @@ export default function Footer() {
                 </aside>
                 <nav className='text-base'>
                     <header className="footer-title"> OUR SERVICES</header>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/hottapping'>    <li className="">Hot Tappings</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/linestopping'>    <li className="">Line Stopping</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/coldcutting'>    <li className="">Cold Cutting</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/catalysthandling'>    <li className="">Catalyst Handling</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/crudeoilcleaning'>    <li className="">Crude Oil Tank Cleaning</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/pigging'>    <li className="">Mechanical Decoking - pigging</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/vaccumtanker'>    <li className="">Vaccum Tankers</li></Link>
-                <Link to='/adarshsavalagi.github.io-mechexcel/service/manufacturing'>    <li className="">Manufacturing Facility</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/hottapping'>    <li className="">Hot Tappings</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/linestopping'>    <li className="">Line Stopping</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/coldcutting'>    <li className="">Cold Cutting</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/pipelinepigging'>    <li className="">Pipeline Pigging</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/catalysthandling'>    <li className="">Catalyst Handling</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/crudeoilcleaning'>    <li className="">Crude Oil Tank Cleaning</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/pigging'>    <li className="">Mechanical Decoking - pigging</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/vaccumtanker'>    <li className="">Vaccum Tankers</li></Link>
+                <Link offset={0}  to='/adarshsavalagi.github.io-mechexcel/service/manufacturing'>    <li className="">Manufacturing Facility</li></Link>
                 </nav>
                 <nav className='text-base '>
                     <h2 className="footer-title mr-2">REACH US AT:</h2>

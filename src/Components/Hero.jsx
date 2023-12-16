@@ -3,11 +3,13 @@ import React from 'react'
 export default function Hero() {
   const scrollToNextSection = () => {
     const nextSection = document.getElementById('services');
-  
+  console.log(
+    nextSection
+  );
   if (nextSection) {
     const sectionTop = nextSection.getBoundingClientRect().top;
     window.scrollBy({ 
-      top: sectionTop - 250, // Adjust 20 as needed for extra spacing
+      top: sectionTop - 250,
       behavior: 'smooth' 
     });
   }
@@ -21,9 +23,6 @@ export default function Hero() {
           <div className="flex flex-col mb-8 lg:mb-16 space-y-4 items-center text-center content-center">
             <a href="#" onClick={scrollToNextSection} className=" justify-center items-center py-3 px-5 text-base font-medium text-center text-black ">
             <AnimatedSVG/>
-
-
-
             </a>
           </div>
         </div>

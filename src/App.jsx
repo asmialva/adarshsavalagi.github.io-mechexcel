@@ -13,6 +13,7 @@ import CrudeOilTankCleaning from "./Pages/ServiceDescription/CrudeOilTankCleanin
 import Pigging from "./Pages/ServiceDescription/Pigging";
 import VaccumTanker from "./Pages/ServiceDescription/VaccumTanker";
 import Manufacturing from "./Pages/ServiceDescription/Manufacturing";
+import PipelinePigging from "./Pages/ServiceDescription/PipelinePigging";
 function App() {
 
   return (
@@ -24,14 +25,15 @@ function App() {
           <Route path="/adarshsavalagi.github.io-mechexcel/about"  element={ <About/>} />
           <Route path="/adarshsavalagi.github.io-mechexcel/service"  element={ <Service/>} />
           {/* Hot tapping */}
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/hottapping"  element={ <Hottapping/>} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/linestopping"  element={ <LineStopping/>} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/coldcutting"  element={ <ColdCutting/>} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/catalysthandling"  element={ <CatalystHandling />} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/crudeoilcleaning"  element={ <CrudeOilTankCleaning />} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/pigging"  element={ <Pigging/>} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/vaccumtanker"  element={ <VaccumTanker/>} />
-          <Route path="/adarshsavalagi.github.io-mechexcel/service/manufacturing"  element={ <Manufacturing/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/hottapping"  element={ <Hottapping/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/linestopping"  element={ <LineStopping/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/coldcutting"  element={ <ColdCutting/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/pipelinepigging"  element={ <PipelinePigging/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/catalysthandling"  element={ <CatalystHandling />} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/crudeoilcleaning"  element={ <CrudeOilTankCleaning />} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/pigging"  element={ <Pigging/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/vaccumtanker"  element={ <VaccumTanker/>} />
+          <Route exact path="/adarshsavalagi.github.io-mechexcel/service/manufacturing"  element={ <Manufacturing/>} />
           {/* testing pages */}
           <Route path="/adarshsavalagi.github.io-mechexcel/test"  element={ <TempPage/>} />
 

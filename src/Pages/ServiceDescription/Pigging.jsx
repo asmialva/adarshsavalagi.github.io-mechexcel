@@ -40,25 +40,34 @@ export default function Pigging() {
         </div>
       </div>
       <div className='mx-8 md:mx-32 my-20'>
-        <h1 className='font-bold text-4xl '>PIPELINE PIGGING</h1>
+        <h1 className='font-bold text-4xl '>Mechanical Decoking / Pigging</h1>
         <div className=''>
           <p className='md:my-5 my-2 text-justify'>
-          At MECHEXCEL, we specialize in crafting bespoke pigging programs for routine maintenance. We understand that every pipeline is unique, and its history, past pigging programs, and pig types used play crucial roles in determining the ideal approach. A well-planned pigging program is not just a maintenance task; it's a lifeline for your pipeline's longevity.  </p>
-          <p className='md:my-5 my-2 text-justify'>
-          Our commitment is to provide cleaning solutions that cater to your routine maintenance needs and extend beyond to offer pre-inspection cleaning support. Our comprehensive pigging maintenance service begins with a meticulous study of your pipeline. We delve into system information, flow dynamics, pressures, temperatures, and various other parameters. We analyse pipeline geometry, medium, and the type of debris to be removed, and perform debris analysis while considering your pipeline's unique design. </p>
-          <p className='md:my-5 my-2 text-justify'>
-          Following this thorough assessment, we develop a tailored cleaning program. This program includes the careful selection of cleaning pigs and a detailed plan for their deployment. Our operational support encompasses pig launching, pig receiving, and real-time pig tracking, along with data collection.</p>
-          <p className='md:my-5 my-2 text-justify'>
-          We understand the importance of monitoring the cleaning progress and its effectiveness. That's why we're dedicated to crafting a complete pigging solution tailored specifically to your pipeline's needs. For pipelines burdened with heavy debris or those that haven't seen cleaning in years, we specialize in designing progressive pigging programs. These programs ensure pipeline cleanliness, resulting in enhanced throughput and efficiency.</p>
+          Mechanical Decoking / Pigging is Globally Recognized as the Optimal Method for Removing Coke Scaling inside Fired Heater Tubes.</p>
 
-          <h3 className='font-semibold text-xl'>Benefits of Our Pipeline Cleaning Solutions:</h3>
+
+
+          <h3 className='font-semibold text-xl'>Benefits:</h3>
 
           
-<li className='ml-3 my-1'>Maximization of Operating Efficiency: Our tailored approach optimizes your pipeline's performance.</li>
-<li className='ml-3 my-1'>Energy Efficiency with Better Flow Management: Achieve energy efficiency through improved flow dynamics.</li>
-<li className='ml-3 my-1'>Extended Life: Prolong your pipeline's lifespan with our comprehensive maintenance solutions.</li>
-<li className='ml-3 my-1'>Corrosion Monitoring and Effective Prevention: We offer proactive corrosion monitoring and preventive measures.</li>
-<li className='ml-3 my-1'>Safety of Assets and People: Prioritize safety for both your assets and personnel.</li>
+<li className='ml-3 my-1'>Enhances Efficiency: Drives improved operational efficiency.</li>
+<li className='ml-3 my-1'>Boosts Productivity: Increases overall productivity levels.</li>
+<li className='ml-3 my-1'>Reduces Maintenance Costs: Cuts down on maintenance expenses.</li>
+<li className='ml-3 my-1'>Enhances Reliability: Promotes greater system reliability.</li>
+<li className='ml-3 my-1'>Minimizes Risks: Reduces potential operational risks.</li>
+<li className='ml-3 my-1'>Improves Safety & Quality: Elevates safety standards and product quality.</li>
+
+          <p className='md:my-5 my-2 text-justify'>
+          MECHEXCEL: Pioneering 100% Indian Decoking / Pigging Services for Heaters</p>
+          <p className='md:my-5 my-2 text-justify'>
+          MECHEXCEL proudly stands as the first Indian company to offer comprehensive Decoking / Pigging Services for Heaters.</p>
+          <p className='md:my-5 my-2 text-justify'>
+          Our pigging and decoking system is not only completely safe and self-contained but also adept at cleaning heaters with radius bends, plug headers, and box headers.</p>
+          <p className='md:my-5 my-2 text-justify'>
+          With the capability to track pigs and swiftly identify problem areas, our system ensures your heaters run at peak efficiency.</p>
+          <p className='md:my-5 my-2 text-justify'>
+          While we clean your heater, you can concurrently perform other maintenance tasks, saving both time and money.</p>
+
 
 
 
@@ -71,7 +80,7 @@ export default function Pigging() {
 
           
           </div>
-              <p className=''>Your pipeline's potential is our priority, and we're here to ensure it operates at its best for years to come.</p>
+              <p className=''>Our trailer-mounted double pumper decoking unit has the capacity to handle two jobs simultaneously. For instance, it can clean one heater with two passes simultaneously, allowing for bidirectional cleaning. Moreover, it achieves this without the use of chemicals, without causing damage to heater tubes, and with minimal environmental impact</p>
         </div>
 
       </div>
