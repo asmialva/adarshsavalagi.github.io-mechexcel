@@ -1,6 +1,6 @@
 import React from 'react'
 import {serviceItem} from '../data/services'
-import { Link} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 export default function Services() {
 
 
@@ -25,6 +25,7 @@ export default function Services() {
 }
 
 const ServiceCard = ({ serviceItem }) => {
+  const history=useNavigate();
     const cardBaseStyle = {
         position: 'relative',
     overflow: 'hidden',
@@ -75,7 +76,7 @@ const ServiceCard = ({ serviceItem }) => {
                   <h5 className="mb-2 text-2xl font-semibold text-white">{service.title}</h5>
                 </a>
                 <p className="mb-3 text-gray-200 text-justify">{service.data}</p>
-                <button
+                <button onClick={()=>{history(service.nextPage)}}
                   className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus:outline-none focus:ring focus:border-blue-300"
                   style={buttonStyle}
                 >
