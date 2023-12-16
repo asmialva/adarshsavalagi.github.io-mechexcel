@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux'
+import { setByAmount } from '../reducers/cartReducer'
 export default function Contact() {
+    const count = useSelector((state) => state.State.value)
+    const dispatch = useDispatch();
+
+
+
+
     const [visible, setVisible] = useState([]);
     useEffect(() => {
         const handleScroll = () => {
@@ -7,11 +15,20 @@ export default function Contact() {
             const viewportHeight = window.innerHeight;
             const threshold = viewportHeight * 0.8;
             const newVisibleCards = Array.from(cardElements).map((cardElement) => {
+                
                 const cardTop = cardElement.getBoundingClientRect().top;
+                
                 return cardTop < threshold;
             });
             setVisible(newVisibleCards);
         };
+        if (visible[0]) {
+            dispatch(setByAmount(4));
+        }else{
+            dispatch(setByAmount(1));
+
+        }
+        
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll)
