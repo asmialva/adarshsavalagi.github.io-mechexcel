@@ -3,6 +3,7 @@ import backgroundImage from '../assets/about/about.jpg';
 import { ServicePageCategories } from '../data/services'
 import { useSelector, useDispatch } from 'react-redux'
 import { setByAmount } from '../reducers/cartReducer'
+import { useNavigate } from 'react-router-dom';
 export default function TempPage() {
   const count = useSelector((state) => state.State.value)
   const dispatch = useDispatch()
@@ -70,7 +71,7 @@ export default function TempPage() {
 
           {ServicePageCategories[state].services.map((data,index)=>(
             <>
-            <ServiceCard props={data}/>
+            <ServiceCard props={data} />
             </>
           ))}
         </div>
@@ -94,6 +95,8 @@ export default function TempPage() {
 
   
 const ServiceCard = (props ) => {
+  
+  const history = useNavigate();
   const cardBaseStyle = {
       position: 'relative',
   overflow: 'hidden',
@@ -140,7 +143,7 @@ const ServiceCard = (props ) => {
           <h5 className="mb-2 text-2xl font-semibold text-white">{props.props.title}</h5>
         </a>
         <p className="mb-3 text-gray-200 text-justify">{props.props.data} </p>
-        <button
+        <button onClick={()=>{console.log(props.props.nextPage); history(props.props.nextPage)}}
           className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus:outline-none focus:ring focus:border-blue-300"
           style={buttonStyle}
         >
